@@ -1,0 +1,15 @@
+component: aws-dynamodb
+org: # Your Serverless org name goes here
+app: # Your Serverless app name goes here
+name: function-cache # Serverless service name (used on Serverless dashboard)
+
+inputs:
+  name: function-cache # DynamoDB table name
+  deletionPolicy: delete # allows table to be removed. This property is a safe guard.
+  keySchema:
+    - AttributeName: PK
+      KeyType: HASH
+  attributeDefinitions:
+    - AttributeName: PK
+      AttributeType: S
+  region: us-east-1
