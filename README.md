@@ -1,6 +1,6 @@
 # DynamoDB Function Cache
 
-An example of using DynamoDB as a cache for slow or computationally expensive functions in Node.js.
+Use DynamoDB as a cache for slow or computationally expensive functions in Node.js.
 
 # What it does
 
